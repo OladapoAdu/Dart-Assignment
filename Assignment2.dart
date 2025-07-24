@@ -12,4 +12,5 @@ void main(){
   // QUESTION 2: DECLARING CONSTANT VARIABLES
   const double pi = 3.142;
   const int numOfDaysInWeek = 7;
+
 }
