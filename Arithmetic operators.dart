@@ -43,11 +43,12 @@ void main (List<String> args){
 
 
   // CLASSWORK
-  print("ENTER A NUMBER:");
-  String? userInput = stdin.readLineSync();
-  int? number = int.tryParse(userInput ?? "0");
+  // print("ENTER A NUMBER:");
+  // String? userInput = stdin.readLineSync();
+  // int? number = int.tryParse(userInput ?? "0");
 
-  num numberSquare = (number ?? 0) * (number ?? 0);
+  // num numberSquare = (number ?? 0) * (number ?? 0);
 
-  print(numberSquare);
+  // print(numberSquare);
+  
 }
