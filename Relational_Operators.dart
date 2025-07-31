@@ -59,4 +59,11 @@ void main(){
   String? userInput2 = stdin.readLineSync();
 
   print(userInput == userName && userInput2 == password);
+
+
+
+
+  //CONDITIONAL OPERATORS
+  //expr? [execute if true] : [execute if false]
+  
 }
