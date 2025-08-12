@@ -13,21 +13,37 @@ void main(){
   // }
 
 
-  print("ENTER A STRING:");
+//   print("ENTER A STRING:");
 
-  String? userInput = stdin.readLineSync();
+//   String? userInput = stdin.readLineSync();
 
-  String checker = "";
+//   String checker = "";
   
-  for (int i = (userInput ?? "").length - 1; i >= 0; i--) {
-    checker += (userInput ?? "")[i];
-    // print(checker);
-  }
+//   for (int i = (userInput ?? "").length - 1; i >= 0; i--) {
+//     checker += (userInput ?? "")[i];
+//     // print(checker);
+//   }
 
-  if (userInput == checker) {
-    print("It is a palindrome");
+//   if (userInput == checker) {
+//     print("It is a palindrome");
+//   }
+//   else{
+//     print("It isn't a palindrome");
+//   }
+// 
+
+
+  print('ENTER A NUNMBER');
+  int? userInput = int.tryParse(stdin.readLineSync()?? '');
+
+  if (userInput == 0 || userInput == null) {
+    print("Enter a number please.");
   }
   else{
-    print("It isn't a palindrome");
+    for (var i = 1; i <= userInput; i++) {
+      if (userInput % i == 0) {
+        print(i);
+      }
+    }
   }
 }
