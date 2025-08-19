@@ -24,3 +24,8 @@ int sum(int a, int b){
   // print(result);
   return result;
 }
+
+
+//TYPES OF PARAMETER
+// 1. POSITIONAL
+// 2.
