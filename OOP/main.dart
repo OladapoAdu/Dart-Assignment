@@ -1,5 +1,5 @@
 import 'OOP.dart';
-import '';
+import 'smart_phone.dart';
 
 void main(){
   SmartWatch myWatch = SmartWatch(
@@ -11,4 +11,18 @@ void main(){
   print(myWatch.buttons);
 
   myWatch.checkTime();
+
+  SmartPhone iPhoneXR = SmartPhone(
+    manufacturer: "Apple",
+    os: "ios",
+    memory: 6,
+    wifiBand: 260
+  );
+  print(iPhoneXR.manufacturer);
+
+
+  SmartPhone nokiaG20 = SmartPhone(manufacturer: "Nokia", memory: 4, os: "Android", wifiBand: 200);
+  iPhoneXR.ring();
+  nokiaG20.ring(ringtone: "Nokia ringtone now");
+
 }
