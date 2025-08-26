@@ -1,4 +1,6 @@
-class SmartPhone{
+import 'phone.dart';
+
+class SmartPhone extends Phone{
   String os;
   String manufacturer;
   int memory;
@@ -10,20 +12,29 @@ class SmartPhone{
     required this.manufacturer,
     required this.memory,
     required this.os,
-    required this.wifiBand
+    required this.wifiBand,
+    required super.batteryCapacity,
+    required super.simSlot,
+    required super.ringingTone
   });
 
   // NAMED CONSTRUCTORS
   SmartPhone.android({
     required this.manufacturer,
     required this.memory,
-    required this.wifiBand
+    required this.wifiBand,
+    required super.batteryCapacity,
+    required super.simSlot,
+    required super.ringingTone
   }) : os = "Android";
 
   SmartPhone.iphone({
     required this.manufacturer,
     required this.memory,
-    required this.wifiBand
+    required this.wifiBand,
+    required super.batteryCapacity,
+    required super.simSlot,
+    required super.ringingTone
   }) : os = "ios";
 
   void ring({String? ringtone}){

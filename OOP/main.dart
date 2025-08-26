@@ -1,4 +1,5 @@
 import 'OOP.dart';
+import 'landPhone.dart';
 import 'smart_phone.dart';
 
 void main(){
@@ -16,13 +17,30 @@ void main(){
     manufacturer: "Apple",
     os: "ios",
     memory: 6,
-    wifiBand: 260
+    wifiBand: 260,
+    simSlot: 2,
+    batteryCapacity: 2000,
+    ringingTone: "IPHONE RINGTONE"
   );
   print(iPhoneXR.manufacturer);
 
 
-  SmartPhone nokiaG20 = SmartPhone(manufacturer: "Nokia", memory: 4, os: "Android", wifiBand: 200);
+  SmartPhone nokiaG20 = SmartPhone(
+    manufacturer: "Nokia", 
+    memory: 4, 
+    os: "Android", 
+    wifiBand: 200,
+    simSlot: 2,
+    batteryCapacity: 2000,
+    ringingTone: "NOKIA RINGTONE"
+    );
   iPhoneXR.ring();
   nokiaG20.ring(ringtone: "Nokia ringtone now");
+
+  Landphone home = Landphone(
+    batteryCapacity: 1000, 
+    simSlot: 2, 
+    ringingTone: "beep"
+  );
 
 }
